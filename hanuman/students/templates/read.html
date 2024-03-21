@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+        <table border="2px">
+            <th>id</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>PHONE</th>
+            <th>MAIL</th>
+
+            {% for i in data %}
+            <tr>
+               <td> {{i.id}}</td>
+               <td> {{i.name}}</td>
+               <td>{{i.age}}</td> 
+               <td>{{i.phone}}</td> 
+               <td> {{i.mail}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </header>
+      
+    
+  </body>
+</html>
